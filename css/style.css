@@ -70,6 +70,30 @@ img {
     padding: 1.2rem 2rem;
     text-transform: uppercase;
 }
+.btn-outline{
+    border: 1px solid #fff;
+    background-color: transparent;
+    padding: 1rem 1.25rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+/* text */
+.text-xl{
+    font-size: 3.1rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+.text-lg{
+    font-size: 1.6rem;
+    line-height: 1.3;
+    margin: 1.5rem 1rem 1.5rem 0;
+    color: #fff;
+}
+.text-center{
+    text-align: center;
+}
 
 /* header */
 .header {
@@ -130,4 +154,34 @@ img {
     font-weight: 400;
     margin: 0 0 2rem;
     line-height: 1.25;
+}
+
+/* content */
+.content{
+    width: 100%;
+    border-bottom: 8px solid #222;
+}
+.content::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.content-inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 5rem 2rem;
+}
+.content-inner::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.content-inner .col{
+    width: 50%;
+    float: left;
+}
+.content-inner .col img{
+    padding: 0 6%;
+    text-align: center;
 }
